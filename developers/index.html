@@ -1,0 +1,64 @@
+<html>
+<body>
+<script src="/assets/main.js"></script>
+<script>
+  function handleDeveloper(){
+    var data = {}
+    document.querySelectorAll("input").forEach(function(item){
+      var name = item.getAttribute("name")
+      if(name){
+        data[name] = item.value
+      }
+    })
+
+    addDeveloper(data)
+    document.querySelector("form").innerHTML="<h2>Thank you!</h2>"
+    return false;
+  }
+</script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" />
+
+<link href="/assets/style.css" rel="stylesheet" type="text/css" />
+<link href="./style.css" rel="stylesheet" type="text/css" />
+<div class="background">
+  <a href="/">
+    <img src="/assets/logo.png" class="logo" />
+  </a>
+  <div class="banner">
+    <a href="/organizations" class="organizations">Organizations</a>
+    <div class="label">
+      How Can We Help?
+    </div>
+    <a href="/developers" class="developers active">Developers</a>
+  </div>
+  <br />
+  <form class="form" onsubmit="return handleDeveloper()">
+    <h2>Contact Us</h2>
+    <div class="form-control">
+      <label class="label">Email</label>
+      <input type="email" name="email" />
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-6">
+        <div class="form-control">
+          <label class="label">First Name</label>
+          <br />
+          <input type="text" name="firstName" />
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-control">
+          <label class="label">Last Name</label>
+          <br />
+          <input type="text" name="lastName" />
+        </div>
+      </div>
+    </div>
+    <input type="submit" />
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body, html{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+.background{
+  background: radial-gradient(#940202, #4b0000);
+  height: 100%;
+}
+.logo{
+  margin-top: 60px;
+  max-width: 419px;
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+}
+.banner{
+  margin-top: 100px;
+  background-color: #7a0000;
+  padding: 1em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0px -1px 12px rgba(0, 0, 0, 0.6);
+  margin-left: -1em;
+  margin-right: -1em;
+}
+.banner .label{
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 16px 0px;
+}
+.banner a{
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0px 70px;
+  font-size: 30px;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+.banner a:hover, .banner a.active{
+  background-color: rgba(0,0,0,.3);
+}
+.banner .organizations{
+  color: #ff6000;
+}
+.banner .developers{
+  color: #ffe100;
+}
+form{
+  max-width: 800px;
+  margin: 0px auto;
+  color: #fff;
+}
+.form{
+  background-color: #910303;
+  padding: 1em;
+  border-radius: 6px;
+  box-shadow: 0px -1px 12px rgba(0, 0, 0, 0.6);
+}
+.form input[type="submit"]{
+  margin: 1em;
+  font-size: 1.3em;
+  padding: .6em 1.3em;
+  background-color: #4b0000;
+  color: #fff;
+  border: 0px;
+  border-radius: 6px;
+}
+.form h1, .form h2, .form h3{
+  margin-top: 0px;
+}
+.form-control{
+  position: relative;
+
+  /*padding: .5em 1em;*/
+}
+.form-control .label{
+  float: left;
+  font-weight: bold;
+}
+.form-control input{
+  outline: none !important;
+  width: 100%;
+  font-size: 14px;
+  padding: .8em;
+  border-radius: 3px;
+  border: 0px;
+}
+.row{
+  display: block;
+  white-space: nowrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.row:after{
+  display: table;
+  content: '';
+  clear: both;
+}
+.col-6{
+  float: left;
+  width: 50%;
+  display: inline-block;
+  padding: 0px 15px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px){
+  .row{
+    white-space: normal;
+  }
+  .col-6{
+    margin-bottom: 1.5em;
+    width: 100%;
+  }
+}
